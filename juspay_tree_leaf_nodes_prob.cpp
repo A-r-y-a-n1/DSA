@@ -34,7 +34,7 @@ int solveDFS(TreeNode* a , int value , int& m){
 int solveBFS(TreeNode* root, int m) {
     if (!root || m <= 0) return 0;
     
-    queue<pair<TreeNode*, int>> q; // {node, current_consec_zeros}
+    queue<pair<TreeNode*, int>> q;
     q.push({root, 0});
     int count = 0;
 
